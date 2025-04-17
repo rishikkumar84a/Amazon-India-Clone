@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base light theme (default Amazon) */
+    --background: 36 33% 97%;   /* Amazon beige background */
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 24 100% 50%;     /* Amazon orange */
+    --primary-foreground: 0 0% 0%;
+    --secondary: 27 50% 95%;    /* Light beige */
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 39 100% 50%;      /* Amazon yellow */
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 24 100% 50%;        /* Amazon orange */
+    --radius: 0.5rem;
+    --navbar-bg: 210 33% 25%;   /* Dark blue for nav */
+    --navbar-text: 0 0% 100%;   /* White text */
+    --button-green: 126 100% 40%; /* Green for some buttons */
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 30 100% 50%;     /* Slightly darker orange */
+    --primary-foreground: 0 0% 0%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 39 100% 45%;      /* Darker yellow */
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 30 100% 50%;
+    --navbar-bg: 210 50% 15%;   /* Darker blue for nav */
+    --navbar-text: 0 0% 98%;    /* Light text */
+    --button-green: 126 85% 35%; /* Darker green */
+  }
+
+  /* Blue theme */
+  .theme-blue {
+    --background: 210 50% 98%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 210 100% 50%;    /* Blue primary */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 95%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 210 40% 95%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 210 100% 60%;     /* Lighter blue */
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 40% 90%;
+    --input: 210 40% 90%;
+    --ring: 210 100% 50%;
+    --navbar-bg: 210 100% 25%;  /* Dark blue nav */
+    --navbar-text: 0 0% 100%;   /* White text */
+    --button-green: 126 100% 40%;
+  }
+
+  /* Green theme */
+  .theme-green {
+    --background: 120 30% 98%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 142 76% 36%;     /* Green primary */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 120 20% 95%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 120 20% 95%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 142 76% 46%;      /* Lighter green */
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 120 20% 90%;
+    --input: 120 20% 90%;
+    --ring: 142 76% 36%;
+    --navbar-bg: 142 76% 25%;   /* Dark green nav */
+    --navbar-text: 0 0% 100%;   /* White text */
+    --button-green: 126 100% 40%;
+  }
+
+  /* Purple theme */
+  .theme-purple {
+    --background: 270 30% 98%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 270 70% 50%;     /* Purple primary */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 270 20% 95%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 270 20% 95%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 270 70% 60%;      /* Lighter purple */
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 270 20% 90%;
+    --input: 270 20% 90%;
+    --ring: 270 70% 50%;
+    --navbar-bg: 270 70% 25%;   /* Dark purple nav */
+    --navbar-text: 0 0% 100%;   /* White text */
+    --button-green: 126 100% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Amazon specific components */
+@layer components {
+  .amazon-button-primary {
+    @apply bg-primary text-black font-medium py-1 px-4 rounded-full hover:brightness-105;
+  }
+
+  .amazon-button-secondary {
+    @apply bg-secondary text-black font-medium py-1 px-4 rounded-full hover:brightness-95;
+  }
+
+  .amazon-button-green {
+    @apply bg-[hsl(var(--button-green))] text-white font-medium py-1 px-4 rounded-md hover:brightness-105;
+  }
+
+  .amazon-navbar {
+    @apply bg-[hsl(var(--navbar-bg))] text-[hsl(var(--navbar-text))];
+  }
+
+  .amazon-search {
+    @apply flex-1 flex items-center;
+  }
+
+  .amazon-product-card {
+    @apply bg-card rounded-md p-4 transition-all hover:shadow-md;
+  }
+}
